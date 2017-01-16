@@ -17,6 +17,8 @@
 
 
 #index-banner {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     position: relative;
     background-color: #2196F3;
 }
