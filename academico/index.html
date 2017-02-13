@@ -24,34 +24,37 @@
         <h5 class="header col s12 light">O novo sistema de controle de notas e frequências, feito para facilitar a vida dos alunos e dos professores.</h5>
       </div>
       <div id="button" class="row center">
-        <a href="#" id="login-button" class="btn-large waves-effect waves-light red darken-1" onClick="hideShow('login')">Login</a>
+        <a href="#login" id="login-button" class="btn-large waves-effect waves-light red darken-1" onClick="hideShow('login'); hide('login-button')">Login</a>
       </div>
-      <div id="login" class="row center">
-        <div class="row">
-          <div class="col s3">
-            <h1></h1>
-          </div>
-          <div class="col s6">
-            <form>
-              <div class="input-field">
-                <input id="matricula" type="text">
-                <label for="matricula">Matrícula</label>
-              </div>
-              <div class="input-field">
-                <input id="senha" type="password">
-                <label for="senha">Senha</label>
-              </div>
-              <div class="center">
-                <button class="btn waves-effect waves-light red darken-1">Fazer login</button>
-              </div>
-              <p class="center">Esqueceu sua senha? Clique <a class="red-text text-lighten-1" href="#">aqui</a>.</p>
-            </form>
-          </div>
-          <div class="col s3">
-            <h1></h1>
+      <br><br>
+      <article id="login">
+        <div id="login" class="row center" display="none">
+          <div class="row">
+            <div class="col s1 l3">
+              <h1></h1>
+            </div>
+            <div class="col s10 l6">
+              <form>
+                <div class="input-field">
+                  <input id="matricula" type="text">
+                  <label for="matricula">Matrícula</label>
+                </div>
+                <div class="input-field">
+                  <input id="senha" type="password">
+                  <label for="senha">Senha</label>
+                </div>
+                <div class="center">
+                  <button class="btn waves-effect waves-light red darken-1">Fazer login</button>
+                </div>
+                <p class="center">Esqueceu sua senha? Clique <a class="red-text text-lighten-1" href="#">aqui</a>.</p>
+              </form>
+            </div>
+            <div class="col s1 l3">
+              <h1></h1>
+            </div>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   </div>
 
