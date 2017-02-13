@@ -16,6 +16,10 @@
     color: #f44336;
   }
 
+.display {
+    display:none;
+}
+
 function hideShow(e) {
   var display = document.getElementById(e).style.display;
     if(display == "none")
