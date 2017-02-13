@@ -3,7 +3,7 @@ function hideShow(e) {
         if(display == "none")
             document.getElementById(e).style.display = 'block';
        else
-           document.getElementById(e).style.display = 'none';
+            document.getElementById(e).style.display = 'none';
   }
 
 function show(e){
@@ -12,8 +12,4 @@ function show(e){
 
 function hide(e){
 	document.getElementById(e).style.display = 'none';
-}
-
-.display {
-    display:none;
 }
