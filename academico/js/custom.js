@@ -15,7 +15,7 @@
   .input-field .prefix.active {
     color: #f44336;
   }
-      
+
 function hideShow(e) {
   var display = document.getElementById(e).style.display;
     if(display == "none")
@@ -23,8 +23,3 @@ function hideShow(e) {
     else
       document.getElementById(e).style.display = 'none';
 }
-
-function hide(e){
-  document.getElementById(e).style.display = 'none';
-}
-
