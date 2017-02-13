@@ -6,6 +6,14 @@ function hideShow(e) {
            document.getElementById(e).style.display = 'none';
   }
 
+function show(e){
+	document.getElementById(e).style.display = 'block'
+}
+
+function hide(e){
+	document.getElementById(e).style.display = 'none'
+}
+
 .display {
     display:none;
 }
