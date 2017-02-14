@@ -55,6 +55,7 @@
                 </div>
                 <script>
                     function verificar() {
+                      this.preventDefault();
                       if(document.getElementById("matricula").value == 'aluno'){
                         open("https://spallacety.github.io/academico/boletim", "_self");
                       }
@@ -66,7 +67,7 @@
                         //$(document).ready(function(){
                         //  $('.modal-trigger').leanModal();
                         //});
-                        window.location.href = "#error"
+                        window.location.href = "#error";
                         $('#error').modal('open');
                         document.getElementById("matricula").focus();
                         document.getElementById("senha").value = "";
