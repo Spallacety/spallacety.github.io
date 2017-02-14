@@ -65,9 +65,7 @@
                       }
                       else{
                         //alert("Matricula ou senha inválidos.");
-                        $(document).ready(function(){
-                          $('#error').modal('open');
-                        });
+                        $('#error').open();
                         document.getElementById("matricula").focus();
                         document.getElementById("senha").value = "";
                       }
