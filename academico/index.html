@@ -44,6 +44,15 @@
               <div class="center">
                 <br>
                 <button class="btn waves-effect waves-light red lighten-1" onClick="verificar()">Login</button>
+                <div id="error" class="modal">
+                  <div class="modal-content">
+                    <h4>Erro</h4>
+                    <p>Matricula ou senha inválidos.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Voltar</a>
+                  </div>
+                </div>
                 <script>
                     function verificar() {
                       if(document.getElementById("matricula").value == 'aluno'){
@@ -53,7 +62,7 @@
                         open("https://spallacety.github.io/academico/professor", "_self");
                       }
                       else{
-                        alert('Matricula ou senha inválidos.');
+                        window.location.href = document.getElementById('error').href
                         document.getElementById("matricula").focus()
                         document.getElementById("senha").value = "";
                       }  
