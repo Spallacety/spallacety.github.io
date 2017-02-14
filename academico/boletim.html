@@ -29,25 +29,29 @@
   </nav>
   <div class="section no-pad-bot" id="index-banner">
     <br>
-    <a id="swap" class="btn-large waves-effect waves-light red lighten-1" onClick="swap()">Mostrar boletim</a>
-    <script>
-      function swap() {
-        var display = document.getElementById('boletim').style.display;
-        var botao = document.getElementById("swap");
+    <div class="container">
+      <div class"row center">
+        <a id="swap" class="btn-large waves-effect waves-light red lighten-1" onClick="swap()">Mostrar boletim</a>
+        <script>
+          function swap() {
+            var display = document.getElementById('boletim').style.display;
+            var botao = document.getElementById("swap");
 
-        if(display == "none") {
-          document.getElementById('boletim').style.display = 'block';
-          document.getElementById('horario').style.display = 'none';
-          botao.innerHTML = "Mostrar horário";
-        }
-        else {
-          document.getElementById('boletim').style.display = 'none';
-          document.getElementById('horario').style.display = 'block';
-          botao.innerHTML = "Mostrar boletim";
-        }
+            if(display == "none") {
+              document.getElementById('boletim').style.display = 'block';
+              document.getElementById('horario').style.display = 'none';
+              botao.innerHTML = "Mostrar horário";
+            }
+            else {
+              document.getElementById('boletim').style.display = 'none';
+              document.getElementById('horario').style.display = 'block';
+              botao.innerHTML = "Mostrar boletim";
+            }
 
-      }
-    </script>
+          }
+        </script>
+      </div>
+    </div>
     <div id="horario" class="container">
       <h3 class="header center light-green-text text-lighten-1">Horário</h1>
       <div class="row center">
