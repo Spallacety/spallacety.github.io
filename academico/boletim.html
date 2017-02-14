@@ -28,7 +28,27 @@
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
+    <br>
+    <a id="swap" class="btn-large waves-effect waves-light red lighten-1" onClick="swap()">Mostrar boletim</a>
+    <script>
+      function swap() {
+        var display = document.getElementById('boletim').style.display;
+        var botao = document.getElementById("swap");
+
+        if(display == "none") {
+          document.getElementById('boletim').style.display = 'block';
+          document.getElementById('horario').style.display = 'none';
+          botao.innerHTML = "Mostrar horário";
+        }
+        else {
+          document.getElementById('boletim').style.display = 'none';
+          document.getElementById('horario').style.display = 'block';
+          botao.innerHTML = "Mostrar boletim";
+        }
+
+      }
+    </script>
+    <div id="horario" class="container">
       <h3 class="header center light-green-text text-lighten-1">Horário</h1>
       <div class="row center">
         <table class="bordered striped centered">
@@ -93,8 +113,7 @@
         <p class="center">PBD = <a class="red-text text-lighten-1" href="#">Projeto de Banco de Dados</a></p>
       </div>
     </div>
-    <div class="container">
-      <br>
+    <div id="boletim" class="container" style="display:none">
       <h3 class="header center light-green-text text-lighten-1">Boletim</h1>
       <div class="row center">
         <table class="highlight responsive-table">
@@ -162,9 +181,8 @@
       <p class="center">M.S. = Média Semestral</p>
       <p class="center">Rec. = Recuperação</p>
       <p class="center">M.F. = Média Final</p>
-      <br><br>
     </div>
-  </div>
+    <br><br>
   </div>
 
   <footer class="page-footer red lighten-1">
