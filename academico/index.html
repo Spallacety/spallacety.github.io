@@ -53,21 +53,12 @@
                         open("https://spallacety.github.io/academico/professor", "_self");
                       }
                       else{
-                        window.location.href = "#error"
+                        alert("Matricula ou senha inválidos.");
                         document.getElementById("matricula").focus();
                         document.getElementById("senha").value = "";
                       }  
                     }
                   </script>
-                  <div id="error" class="modal">
-                    <div class="modal-content">
-                      <h4>Erro</h4>
-                      <p>Matricula ou senha inválidos.</p>
-                    </div>
-                    <div class="modal-footer">
-                      <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Voltar</a>
-                    </div>
-                  </div>
                 <br><br>
               </div>
               <p class="center">Esqueceu sua senha? Clique <a class="red-text text-lighten-1" href="#">aqui</a>.</p>
