@@ -44,6 +44,7 @@
               <div class="center">
                 <br>
                 <button class="btn waves-effect waves-light red lighten-1" onClick="verificar()">Login</button>
+                <a class="btn" href="#modal1">modal</button>
                 <script>
                     function verificar() {
                       if(document.getElementById("matricula").value == 'aluno'){
@@ -59,6 +60,20 @@
                       }  
                     }
                   </script>
+
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
                   <div id="error" class="modal">
                     <div class="modal-content">
                       <h4>Erro</h4>
