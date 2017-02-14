@@ -44,6 +44,7 @@
               <div class="center">
                 <br>
                 <button class="btn waves-effect waves-light red lighten-1" onClick="verificar()">Login</button>
+                <a id="trigger-modal" class="modal-trigger" href="#error"></a>
                 <div id="error" class="modal">
                   <div class="modal-content">
                     <h4>Erro</h4>
@@ -64,11 +65,9 @@
                       }
                       else{
                         //alert("Matricula ou senha inválidos.");
-                        //$(document).ready(function(){
-                        //  $('.modal-trigger').leanModal();
-                        //});
-                        window.location.href = "#error";
-                        $('#error').modal('open');
+                        $(document).ready(function(){
+                          $('#error').modal('open');
+                        });
                         document.getElementById("matricula").focus();
                         document.getElementById("senha").value = "";
                       }
