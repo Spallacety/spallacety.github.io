@@ -44,6 +44,21 @@
               <div class="center">
                 <br>
                 <button class="btn waves-effect waves-light red lighten-1" onClick="verificar()">Login</button>
+                <script>
+                  function verificar() {
+                    if(document.getElementById("matricula").value == 'aluno'){
+                      open("https://spallacety.github.io/academico/boletim", "_self");
+                    }
+                    else if(document.getElementById("matricula").value == 'professor'){
+                      open("https://spallacety.github.io/academico/professor", "_self");
+                    }
+                    else{
+                      window.location.href = document.getElementById('error').href;
+                      document.getElementById("matricula").focus();
+                      document.getElementById("senha").value = "";
+                    }  
+                  }
+                </script>
                 <div id="error" class="modal">
                   <div class="modal-content">
                     <h4>Erro</h4>
@@ -53,21 +68,6 @@
                     <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Voltar</a>
                   </div>
                 </div>
-                <script>
-                    function verificar() {
-                      if(document.getElementById("matricula").value == 'aluno'){
-                        open("https://spallacety.github.io/academico/boletim", "_self");
-                      }
-                      else if(document.getElementById("matricula").value == 'professor'){
-                        open("https://spallacety.github.io/academico/professor", "_self");
-                      }
-                      else{
-                        window.location.href = document.getElementById('error').href
-                        document.getElementById("matricula").focus()
-                        document.getElementById("senha").value = "";
-                      }  
-                    }
-                    </script>
                 <br><br>
               </div>
               <p class="center">Esqueceu sua senha? Clique <a class="red-text text-lighten-1" href="#">aqui</a>.</p>
