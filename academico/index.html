@@ -24,7 +24,7 @@
         <h5 class="header col s12 light">O novo sistema de controle de notas e frequências, feito para facilitar a vida dos alunos e dos professores.</h5>
       </div>
       <div id="button" class="row center">
-        <a id="login-button" class="btn-large waves-effect waves-light red lighten-1" onClick="document.getElementById('login-form').style.display = 'block'; this.style.display = 'none'">Login</a>
+        <a id="login-button" class="btn-large waves-effect waves-light red lighten-1" onClick="document.getElementById('login-form').style.display = 'block'; this.style.display = 'none'" href="#">Login</a>
       </div>
       <div id="login-form" class="row center" style="display:none">
         <div class="row">
@@ -45,29 +45,29 @@
                 <br>
                 <button class="btn waves-effect waves-light red lighten-1" onClick="verificar()">Login</button>
                 <script>
-                  function verificar() {
-                    if(document.getElementById("matricula").value == "aluno"){
-                      open("https://spallacety.github.io/academico/boletim", "_self");
+                    function verificar() {
+                      if(document.getElementById("matricula").value == 'aluno'){
+                        open("https://spallacety.github.io/academico/boletim", "_self");
+                      }
+                      else if(document.getElementById("matricula").value == 'professor'){
+                        open("https://spallacety.github.io/academico/professor", "_self");
+                      }
+                      else{
+                        window.location.href = "#error"
+                        document.getElementById("matricula").focus();
+                        document.getElementById("senha").value = "";
+                      }  
                     }
-                    else if(document.getElementById("matricula").value == "professor"){
-                      open("https://spallacety.github.io/academico/professor", "_self");
-                    }
-                    else{
-                      alert("Matricula ou senha inválidos.");
-                      document.getElementById("matricula").focus();
-                      document.getElementById("senha").value = "";
-                    }  
-                  }
-                </script>
-                <div id="error" class="modal">
-                  <div class="modal-content">
-                    <h4>Erro</h4>
-                    <p>Matricula ou senha inválidos.</p>
+                  </script>
+                  <div id="error" class="modal">
+                    <div class="modal-content">
+                      <h4>Erro</h4>
+                      <p>Matricula ou senha inválidos.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Voltar</a>
+                    </div>
                   </div>
-                  <div class="modal-footer">
-                    <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Voltar</a>
-                  </div>
-                </div>
                 <br><br>
               </div>
               <p class="center">Esqueceu sua senha? Clique <a class="red-text text-lighten-1" href="#">aqui</a>.</p>
