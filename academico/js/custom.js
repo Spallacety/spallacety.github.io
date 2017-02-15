@@ -3,6 +3,7 @@ $(document).ready(function(){
   $('.modal').modal();
 });
 
+$('#navbar-aluno').load("common/navbar-aluno.html");
 $('#footer').load("common/footer.html");
 
 function verificarLogin() {
