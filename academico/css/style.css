@@ -35,3 +35,8 @@
 .input-field .prefix.active {
   color: #f44336;
 }
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  background-color: transparent;
+  color: #9ccc65;
+}
