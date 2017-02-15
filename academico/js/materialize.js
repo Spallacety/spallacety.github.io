@@ -1373,7 +1373,7 @@ if (jQuery) {
     init : function(options) {
       var defaults = {
         onShow: null,
-        swipeable: true,
+        swipeable: false,
         responsiveThreshold: Infinity, // breakpoint for swipeable
       };
       options = $.extend(defaults, options);
