@@ -43,3 +43,13 @@
 .tabs li.tab a:hover {
   color: #9ccc65;
 }
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  background-color: transparent;
+  color: #9ccc65;
+}
+
+.tabs .indicator {
+  background-color: #9ccc65;
+}
+
