@@ -54,3 +54,8 @@
   background-color: #9ccc65;
 }
 
+#footer {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
