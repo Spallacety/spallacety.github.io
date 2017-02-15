@@ -1,5 +1,5 @@
+//para abrir modals
 $(document).ready(function(){
-  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
   $('.modal').modal();
 });
 
@@ -12,7 +12,6 @@ function verificarLogin() {
   }
   else{
     $('#error').modal('open');
-    document.getElementById("matricula").focus();
     document.getElementById("senha").value = "";
   }
 }
