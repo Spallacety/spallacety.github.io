@@ -16,20 +16,3 @@ function verificarLogin() {
     document.getElementById("senha").value = "";
   }
 }
-
-function swapBoletimHorario() {
-  var display = document.getElementById('boletim').style.display;
-  var botao = document.getElementById("swap");
-
-  if(display == "none") {
-    document.getElementById('boletim').style.display = 'block';
-    document.getElementById('horario').style.display = 'none';
-    botao.innerHTML = "Mostrar horário";
-  }
-
-  else {
-    document.getElementById('boletim').style.display = 'none';
-    document.getElementById('horario').style.display = 'block';
-    botao.innerHTML = "Mostrar boletim";
-  }
-}
