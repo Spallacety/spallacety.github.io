@@ -1,6 +1,7 @@
 //para abrir modals
 $(document).ready(function(){
   $('.modal').modal();
+  document.getElementById("boletim").classList.add("active");
 });
 
 $('#navbar-aluno').load("common/navbar-aluno.html");
