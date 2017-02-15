@@ -1,10 +1,7 @@
 $(document).ready(function(){
   $('.modal').modal();
-  $('.tooltipped').tooltip({delay: 50});
-  document.getElementById("boletim").classList.add("active");
 });
 
-$('#navbar-aluno').load("common/navbar-aluno.html");
 $('#footer').load("common/footer.html");
 
 function verificarLogin() {
