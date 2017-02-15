@@ -36,7 +36,10 @@
   color: #f44336;
 }
 
-.tabs .tab a:hover, .tabs .tab a.active {
-  background-color: transparent;
+.tabs li.tab a {
+  color: #9ccc65;
+}
+
+.tabs li.tab a:hover {
   color: #9ccc65;
 }
