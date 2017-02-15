@@ -3,6 +3,8 @@ $(document).ready(function(){
   $('.modal').modal();
 });
 
+$('#footer').load("common/footer.html");
+
 function verificarLogin() {
   if(document.getElementById("matricula").value == 'aluno'){
     open("https://spallacety.github.io/academico/boletim", "_self");
