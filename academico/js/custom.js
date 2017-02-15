@@ -1,6 +1,6 @@
-//para abrir modals
 $(document).ready(function(){
   $('.modal').modal();
+  $('.tooltipped').tooltip({delay: 50});
   document.getElementById("boletim").classList.add("active");
 });
 
