@@ -1,10 +1,9 @@
-$( window ).on( "load", function() {
-  document.getElementById('calendario').className = 'active';
+$(window).on("load", function() {
+  window.getElementById(window.location.pathname).className = 'active';
   $('.modal').modal();
   $('.tooltipped').tooltip({delay: 50});
   $(".dropdown-button").dropdown();
 });
-
 
 $('#navbar-aluno').load("common/navbar-aluno.html");
 $('#footer').load("common/footer.html");
