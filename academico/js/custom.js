@@ -1,14 +1,8 @@
-$(document).ready(function(){
+$( window ).on( "load", function() {
+  document.getElementById('calendario').className = 'active';
   $('.modal').modal();
-});
-
-/*  $(document).ready(function(){
-    $('.tooltipped').tooltip({delay: 50});
-    $(".dropdown-button").dropdown();
-  });*/
-
-$(window).on("load", function() {
-  document.getElementById(''+ location.pathname'').className = 'active';
+  $('.tooltipped').tooltip({delay: 50});
+  $(".dropdown-button").dropdown();
 });
 
 
