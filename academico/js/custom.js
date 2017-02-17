@@ -1,8 +1,9 @@
-$( window ).on( "load", function() {
-  document.getElementById('calendario').className = 'active';
+$(document).ready(function(){
   $('.modal').modal();
-  $('.tooltipped').tooltip({delay: 50});
-  $(".dropdown-button").dropdown();
+});
+
+$( window ).on( "load", function() {
+  document.getElementById(''+ window.location.pathname'').className = 'active';
 });
 
 
