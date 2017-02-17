@@ -5,6 +5,13 @@ $( window ).on( "load", function() {
   $(".dropdown-button").dropdown();
 });
 
+$(document).ready(function() {
+  document.getElementById(window.location.pathname).className = 'active';
+  $('.modal').modal();
+  $('.tooltipped').tooltip({delay: 50});
+  $(".dropdown-button").dropdown();
+});
+
 $('#navbar-aluno').load("common/navbar-aluno.html");
 $('#footer').load("common/footer.html");
 
