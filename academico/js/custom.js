@@ -1,11 +1,7 @@
-$(document).ready(function(){
+$( window ).on( "load", function() {
   $('.modal').modal();
   $('.tooltipped').tooltip({delay: 50});
-  //$('.custom-nav .light-green .nav-wrapper ul li a[href="/' + location.pathname + '"]').closest('li').addClass('active'); 
   $(".dropdown-button").dropdown();
-});
-
-$( window ).on( "load", function() {
   document.getElementById('calendario').className = 'active';
 });
 
