@@ -1,9 +1,10 @@
 $(document).ready(function(){
   $('.modal').modal();
   $('.tooltipped').tooltip({delay: 50});
-  $('a[href="academico/' + location.pathname + '"]').closest('li').addClass('active'); 
+  $('a[href="' + location.pathname + '"]').closest('li').addClass('active'); 
 });
 
+$('#navbar-aluno').load("common/navbar-aluno.html");
 $('#footer').load("common/footer.html");
 
 function verificarLogin() {
