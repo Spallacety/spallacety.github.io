@@ -2,8 +2,13 @@ $(document).ready(function(){
   $('.modal').modal();
 });
 
-$( window ).on( "load", function() {
-  document.getElementById(''+ window.location.pathname'').className = 'active';
+/*  $(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
+    $(".dropdown-button").dropdown();
+  });*/
+
+$(window).on("load", function() {
+  document.getElementById(''+ location.pathname'').className = 'active';
 });
 
 
