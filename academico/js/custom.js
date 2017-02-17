@@ -3,8 +3,12 @@ $(document).ready(function(){
   $('.tooltipped').tooltip({delay: 50});
   //$('.custom-nav .light-green .nav-wrapper ul li a[href="/' + location.pathname + '"]').closest('li').addClass('active'); 
   $(".dropdown-button").dropdown();
-  $('#' + window.location.pathname + '').addClass('active');
 });
+
+$( window ).on( "load", function() {
+  document.getElementById('calendario').className = 'active';
+});
+
 
 $('#navbar-aluno').load("common/navbar-aluno.html");
 $('#footer').load("common/footer.html");
