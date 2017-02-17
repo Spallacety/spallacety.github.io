@@ -1,5 +1,7 @@
 $(document).ready(function(){
   $('.modal').modal();
+  $('.tooltipped').tooltip({delay: 50});
+  $('a[href="' + location.pathname + '"]').closest('li').addClass('active'); 
 });
 
 $('#footer').load("common/footer.html");
