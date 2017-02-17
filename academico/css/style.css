@@ -54,6 +54,11 @@
   background-color: #9ccc65;
 }
 
+.holiday{
+  font-weight: bold;
+  color: #ef5350;
+}
+
 /*#footer {
   width: 100%;
   bottom: 0;
