@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>AcademIFPI - Pedido de Matrícula</title>
+  <link href="icon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="geral">
+      
+    <div id="navbar-aluno"></div>
+
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header center light-green-text text-lighten-1">Pedido de Matrícula</h5>
+          <p class="center">Visualize abaixo as ofertas de componentes curriculares disponíveis para você.</p>
+          <p class="center">Para efetuar o seu pedido de matrícula basta marcar as disciplinas desejadas, e após isso basta apertar no botão "salvar".</p>
+          <br>
+          <div class="col l4 s12">
+            <form action="#!">
+              <h5 class="header light-green-text text-lighten-1">Disciplinas ofertadas:</h5>
+              <p>
+                <input type="checkbox" class="filled-in checkbox-red" checked="checked" id="engsft2"/>
+                <label for="engsft2" class="black-text">Engenharia de Software 2</label>
+              </p>
+              <p>
+                <input type="checkbox" class="filled-in checkbox-red" checked="checked" id="gpsi"/>
+                <label for="gpsi" class="black-text">Gerência de Projetos em Sistemas de Informação</label>
+              </p>
+              <p>
+                <input type="checkbox" class="filled-in checkbox-red" checked="checked" id="mltmd"/>
+                <label for="mltmd" class="black-text">Sistemas Multimídia</label>
+              </p>
+              <p>
+                <input type="checkbox" class="filled-in checkbox-red" checked="checked" id="tep"/>
+                <label for="tep" class="black-text">Tópicos Especiais em Programação</label>
+              </p>
+              <p>
+                <input type="checkbox" class="filled-in checkbox-red" checked="checked" id="estat"/>
+                <label for="estat" class="black-text">Estatística</label>
+              </p>
+              <p>
+                <input type="checkbox" class="filled-in checkbox-red" checked="checked" id="tcc1"/>
+                <label for="tcc1" class="black-text">Trabalho de Conclusão de Curso 2</label>
+              </p>
+              <br>
+              <button class="btn waves-effect waves-light red lighten-1" onClick="abrirModalMatricula()">Salvar</button>
+            </form>
+            <div id="matricula-modal" class="modal">
+              <div class="modal-content">
+                <h4><i class="small fa fa-check light-green-text text-lighten-1"></i> Salvo</h4>
+                <p class="center">Dados salvos com sucesso.</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat red-text text-lighten-1">Voltar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col l8 s12">
+            <h5 class="header center light-green-text text-lighten-1">Horário Previsto</h5>
+            <table class="bordered striped centered">
+              <thead>
+                <tr>
+                  <th data-field="horario">Horário</th>
+                  <th data-field="segunda">Segunda</th>
+                  <th data-field="terca">Terça</th>
+                  <th data-field="quarta">Quarta</th>
+                  <th data-field="quinta">Quinta</th>
+                  <th data-field="sexta">Sexta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>13:00</td>
+                  <td>GPSI</td>
+                  <td>EngSft2</td>
+                  <td>EngSft2</td>
+                  <td>Estat</td>
+                  <td>Estat</td>
+                </tr>
+                <tr>
+                  <td>14:00</td>
+                  <td>GPSI</td>
+                  <td>EngSft2</td>
+                  <td>EngSft2</td>
+                  <td>EngSft2</td>
+                  <td>Mltmd</td>
+                </tr>
+                <tr>
+                  <td>15:00</td>
+                  <td>GPSI</td>
+                  <td>TEP</td>
+                  <td>TEP</td>
+                  <td>EngSft2</td>
+                  <td>Mltmd</td>
+                </tr>
+                <tr>
+                  <td>16:00</td>
+                  <td>TCC1</td>
+                  <td>TEP</td>
+                  <td>TEP</td>
+                  <td>Mltmd</td>
+                  <td>GPSI</td>
+                </tr>
+                <tr>
+                  <td>17:00</td>
+                  <td>TCC1</td>
+                  <td>TEP</td>
+                  <td>Estat</td>
+                  <td>Mltmd</td>
+                  <td>GPSI</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="footer" class="footer"></div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/init.js"></script>
+  </body>
+</html>

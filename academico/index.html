@@ -11,64 +11,67 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="light-green lighten-1" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#!" class="brand-logo">AcademIFPI</a>
-    </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h2 class="header center light-green-text text-lighten-1">AcademIFPI</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">O novo sistema de controle de notas e frequências, feito para facilitar a vida dos alunos e dos professores.</h5>
+  <div class="geral">
+     
+    <nav class="light-green lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#!" class="brand-logo">AcademIFPI</a>
       </div>
-      <div id="button" class="row center">
-        <a id="login-button" class="btn-large waves-effect waves-light red lighten-1" onClick="document.getElementById('login-form').style.display = 'block'; this.style.display = 'none'" href="#!">Login</a>
-      </div>
-      <div id="login-form" class="row center" style="display:none">
-        <div class="row">
-          <div class="col s1 l3">
-            <h1></h1>
-          </div>
-          <div class="col s10 l6">
-            <form>
-              <div class="input-field">
-                <input id="matricula" type="text">
-                <label for="matricula">Matrícula</label>
-              </div>
-              <div class="input-field">
-                <input id="senha" type="password">
-                <label for="senha">Senha</label>
-              </div>
-              <div class="center">
-                <br>
-                <button class="btn waves-effect waves-light red lighten-1" onClick="verificarLogin()">Login</button>
-                <div id="error" class="modal">
-                  <div class="modal-content">
-                    <h4><i class="small fa fa-warning amber-text"></i> Erro</h4>
-                    <p class="center">Matricula ou senha inválidos.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat red-text text-lighten-1">Voltar</a>
-                  </div>
+    </nav>
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h2 class="header center light-green-text text-lighten-1">AcademIFPI</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">O novo sistema de controle de notas e frequências, feito para facilitar a vida dos alunos e dos professores.</h5>
+        </div>
+        <div id="button" class="row center">
+          <a id="login-button" class="btn-large waves-effect waves-light red lighten-1" onClick="document.getElementById('login-form').style.display = 'block'; this.style.display = 'none'" href="#!">Login</a>
+        </div>
+        <div id="login-form" class="row center" style="display:none">
+          <div class="row">
+            <div class="col s1 l3">
+              <h1></h1>
+            </div>
+            <div class="col s10 l6">
+              <form>
+                <div class="input-field">
+                  <input id="matricula" type="text">
+                  <label for="matricula">Matrícula</label>
                 </div>
-                <br><br>
-              </div>
-              <p class="center">Esqueceu sua senha? Clique <a class="red-text text-lighten-1" href="#!">aqui</a>.</p>
-            </form>
-          </div>
-          <div class="col s1 l3">
-            <h1></h1>
+                <div class="input-field">
+                  <input id="senha" type="password">
+                  <label for="senha">Senha</label>
+                </div>
+                <div class="center">
+                  <br>
+                  <button class="btn waves-effect waves-light red lighten-1" onClick="verificarLogin()">Login</button>
+                  <div id="error" class="modal">
+                    <div class="modal-content">
+                      <h4><i class="small fa fa-warning amber-text"></i> Erro</h4>
+                      <p class="center">Matricula ou senha inválidos.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat red-text text-lighten-1">Voltar</a>
+                    </div>
+                  </div>
+                  <br><br>
+                </div>
+                <p class="center">Esqueceu sua senha? Clique <a class="red-text text-lighten-1" href="#!">aqui</a>.</p>
+              </form>
+            </div>
+            <div class="col s1 l3">
+              <h1></h1>
+            </div>
           </div>
         </div>
+        <br><br>
       </div>
-      <br><br>
     </div>
+
+    <div id="footer" class="footer"></div>
+
   </div>
-
-  <div id="footer"></div>
-
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/custom.js"></script>

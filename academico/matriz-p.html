@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>AcademIFPI - Matrizes Curriculares</title>
+  <link href="icon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="geral">
+      
+    <div id="navbar-professor"></div>
+    
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <div class="row center">
+          <div class="col l3 m3 s0"></div>
+          <div class="col l6 m6 s12">
+            <div class="input-field">
+              <select belowOrigin="true">
+                <option value="ads">ADS</option>
+              </select>
+              <label>Curso</label>
+            </div>
+            <div class="col l3 m3 s0"></div>
+          </div>
+        </div>
+        <div class="row center">
+          <a class="btn centered waves-effect waves-light red lighten-1" onClick="document.getElementById('matriz').style.display = 'block'" href="#!">Ver</a>
+        </div>
+        <div id="matriz" style="display:none" class="col l12 s12">
+          <h5 class="header center light-green-text text-lighten-1">Matriz curricular de ADS</h5>
+          <div class="row center">
+            <table class="bordered striped centered">
+              <thead>
+                <tr>
+                  <th data-field="horario">Mód.</th>
+                  <th data-field="segunda">Sigla</th>
+                  <th data-field="terca">Componente curricular</th>
+                  <th data-field="quarta">C.H.</th>
+                  <th data-field="quinta">Pré-requisitos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>I</td>
+                  <td>AlgProg</td>
+                  <td>Algoritmos e Programação</td>
+                  <td>90h</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>I</td>
+                  <td>IngIns</td>
+                  <td>Inglês Instrumental</td>
+                  <td>45h</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>I</td>
+                  <td>IntAdm</td>
+                  <td>Introdução a Administração</td>
+                  <td>60h</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>I</td>
+                  <td>IntComp</td>
+                  <td>Introdução a Computação</td>
+                  <td>60h</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>I</td>
+                  <td>MatComp</td>
+                  <td>Matemática Computacional</td>
+                  <td>60h</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>I</td>
+                  <td>LngPort</td>
+                  <td>Lingua Portuguesa</td>
+                  <td>45h</td>
+                  <td></td>
+                </tr>
+                  <td>II</td>
+                  <td>ArqComp</td>
+                  <td>Arquitetura de Computadores</td>
+                  <td>60h</td>
+                  <td>IntComp (I)</td>
+                </tr>
+                  <td>II</td>
+                  <td>EDD</td>
+                  <td>Estrutura de Dados</td>
+                  <td>75h</td>
+                  <td>IntComp (I), AlgProg (I)</td>
+                </tr>
+                  <td>II</td>
+                  <td>POO</td>
+                  <td>Programação Orientada a Objeto</td>
+                  <td>75h</td>
+                  <td>IntComp (I), AlgProg (I)</td>
+                </tr>
+                  <td>II</td>
+                  <td>SI</td>
+                  <td>Sistemas de Informação</td>
+                  <td>75h</td>
+                  <td>IntComp (I)</td>
+                </tr>
+                  <td>II</td>
+                  <td>SO</td>
+                  <td>Sistemas Operacionais</td>
+                  <td>75h</td>
+                  <td>IntComp (I)</td>
+                </tr>
+                  <td>III</td>
+                  <td>AOO</td>
+                  <td>Análise Orientada a Objetos</td>
+                  <td>75h</td>
+                  <td>POO (II)</td>
+                </tr>
+                  <td>III</td>
+                  <td>BD</td>
+                  <td>Banco de Dados</td>
+                  <td>75h</td>
+                  <td>EDD (II)</td>
+                </tr>
+                  <td>III</td>
+                  <td>OSM</td>
+                  <td>Organização, Sistemas e Métodos</td>
+                  <td>60h</td>
+                  <td>IntAdm (I)</td>
+                </tr>
+                  <td>III</td>
+                  <td>ProgCrp</td>
+                  <td>Programação Corporativa</td>
+                  <td>90h</td>
+                  <td>POO (II), EDD (II)</td>
+                </tr>
+                  <td>III</td>
+                  <td>Redes</td>
+                  <td>Redes de Computadores</td>
+                  <td>75h</td>
+                  <td>SO (II)</td>
+                </tr>
+                  <td>IV</td>
+                  <td>EngSft1</td>
+                  <td>Engenharia de Software I</td>
+                  <td>90h</td>
+                  <td>AOO (III), ProgCrp (III)</td>
+                </tr>
+                  <td>IV</td>
+                  <td>IHC</td>
+                  <td>Interação Humano-Computador</td>
+                  <td>60h</td>
+                  <td>IntComp (I)</td>
+                </tr>
+                  <td>IV</td>
+                  <td>ProgInt</td>
+                  <td>Programação para Internet</td>
+                  <td>90h</td>
+                  <td>ProgCrp (III), BD (III)</td>
+                </tr>
+                  <td>IV</td>
+                  <td>PBD</td>
+                  <td>Projeto de Bando de Dados</td>
+                  <td>75h</td>
+                  <td>BD (III)</td>
+                </tr>
+                  <td>IV</td>
+                  <td>MtdCtf</td>
+                  <td>Metodologia Científica</td>
+                  <td>30h</td>
+                  <td></td>
+                </tr>
+                  <td>V</td>
+                  <td>EngSft2</td>
+                  <td>Engenharia de Software II</td>
+                  <td>90h</td>
+                  <td>EngSft1 (IV)</td>
+                </tr>
+                  <td>V</td>
+                  <td>GPSI</td>
+                  <td>Gerência de Projetos em Sistemas de Informação</td>
+                  <td>75h</td>
+                  <td>EngSft1 (IV), OSM (III)</td>
+                </tr>
+                  <td>V</td>
+                  <td>Mltmd</td>
+                  <td>Sistemas Multimídia</td>
+                  <td>60h</td>
+                  <td>POO (II)</td>
+                </tr>
+                  <td>V</td>
+                  <td>TEP</td>
+                  <td>Tópicos Especiais em Programação</td>
+                  <td>75h</td>
+                  <td>ProgInt (IV)</td>
+                </tr>
+                  <td>V</td>
+                  <td>Estat</td>
+                  <td>Estatística</td>
+                  <td>60h</td>
+                  <td></td>
+                </tr>
+                  <td>V</td>
+                  <td>TCC1</td>
+                  <td>Trabalho de Conclusão de Curso I</td>
+                  <td>30h</td>
+                  <td>Todas as disciplinas do IV módulo</td>
+                </tr>
+                  <td>VI</td>
+                  <td>Empr</td>
+                  <td>Empreendedorismo</td>
+                  <td>60h</td>
+                  <td>OSM (III)</td>
+                </tr>
+                  <td>VI</td>
+                  <td>ELI</td>
+                  <td>Ética e Legislação em Informática</td>
+                  <td>45h</td>
+                  <td>IntComp (I)</td>
+                </tr>
+                  <td>VI</td>
+                  <td>SAS</td>
+                  <td>Segurança e Auditoria de Sistemas</td>
+                  <td>60h</td>
+                  <td>Redes (III), ProgInt (IV)</td>
+                </tr>
+                  <td>VI</td>
+                  <td>TESI</td>
+                  <td>Tópicos Especiais em Sistemas de Informação</td>
+                  <td>75h</td>
+                  <td>TEP (V), Engft2 (V)</td>
+                </tr>
+                  <td>VI</td>
+                  <td>TCC2</td>
+                  <td>Trabalho de Conclusão de Curso 2</td>
+                  <td>30h</td>
+                  <td>Todas as disciplinas do V módulo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+
+    <div id="footer" class="footer"></div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/init.js"></script>
+  </body>
+</html>
