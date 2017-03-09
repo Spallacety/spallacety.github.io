@@ -19,12 +19,12 @@
       <div class="container">
         <div class="row center">
           <ul class="tabs tabs-fixed-width">
-            <li class="tab"><a class="active" href="#tabela-horario">Horário</a></li>
-            <li class="tab"><a href="#tabela-boletim">Boletim</a></li>
+            <li class="tab"><a class="active" href="#tabela-boletim">Boletim</a></li>
+            <li class="tab"><a href="#tabela-horario">Horário</a></li>
           </ul>
         </div>
       </div>
-      <div id="tabela-horario" class="container">
+      <div id="tabela-horario" class="container" style="display:none">
         <div class="row center">
           <table class="bordered striped centered">
             <thead>
@@ -81,14 +81,14 @@
             </tbody>
           </table>
           <br>
-          <p class="center">MtdCtf = <a class="red-text text-lighten-1" href="#">Metodologia Científica</a></p>
-          <p class="center">ProgInt = <a class="red-text text-lighten-1" href="#">Programação para Internet</a></p>
-          <p class="center">EngSft1 = <a class="red-text text-lighten-1" href="#">Engenharia de Software I</a></p>
-          <p class="center">IHC = <a class="red-text text-lighten-1" href="#">Interação Humano-Computador</a></p>
-          <p class="center">PBD = <a class="red-text text-lighten-1" href="#">Projeto de Banco de Dados</a></p>
+          <p class="center">MtdCtf = <a class="red-text" href="#!">Metodologia Científica</a></p>
+          <p class="center">ProgInt = <a class="red-text" href="#!">Programação para Internet</a></p>
+          <p class="center">EngSft1 = <a class="red-text" href="#!">Engenharia de Software I</a></p>
+          <p class="center">IHC = <a class="red-text" href="perfil-ihc.html">Interação Humano-Computador</a></p>
+          <p class="center">PBD = <a class="red-text" href="#!">Projeto de Banco de Dados</a></p>
         </div>
       </div>
-      <div id="tabela-boletim" class="container" style="display:none">
+      <div id="tabela-boletim" class="container">
         <div class="row center">
           <table class="highlight responsive-table">
             <thead>
@@ -104,7 +104,7 @@
             </thead>
             <tbody>
               <tr>
-                <td>Engenharia de Software I</td>
+                <td><a class="green-text" href="#!">Engenharia de Software I</a></td>
                 <td>90h</td>
                 <td>4</td>
                 <td></td>
@@ -113,7 +113,7 @@
                 <td>Cursando</td>
               </tr>
               <tr>
-                <td>Projeto de Banco de Dados</td>
+                <td><a class="green-text" href="#!">Projeto de Banco de Dados</a></td>
                 <td>75h</td>
                 <td>0</td>
                 <td></td>
@@ -122,7 +122,7 @@
                 <td>Cursando</td>
               </tr>
               <tr>
-                <td>Metodologia Científica</td>
+                <td><a class="green-text" href="#!">Metodologia Científica</a></td>
                 <td>30h</td>
                 <td>0</td>
                 <td></td>
@@ -131,7 +131,7 @@
                 <td>Cursando</td>
               </tr>
               <tr>
-                <td>Programação para Internet</td>
+                <td><a class="green-text" href="#!">Programação para Internet</a></td>
                 <td>90h</td>
                 <td>0</td>
                 <td></td>
@@ -140,7 +140,7 @@
                 <td>Cursando</td>
               </tr>
               <tr>
-                <td>Interação Humano-Computador</td>
+                <td><a class="green-text" href="perfil-ihc.html">Interação Humano-Computador</a></td>
                 <td>60h</td>
                 <td>0</td>
                 <td></td>
@@ -163,7 +163,7 @@
     <div id="footer" class="footer"></div>
 
   </div>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/custom.js"></script>
   <script src="js/init.js"></script>
