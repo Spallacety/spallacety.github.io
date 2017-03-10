@@ -66,6 +66,10 @@ function enviarAviso(){
   $('#aviso-modal').modal('open');
 }
 
+function aulaRegistrada(){
+  $('#aula-modal').modal('open');
+}
+
 function clickNotificacao(){
   if(!document.getElementById("notificacoes.html").classList.contains('active')){
     document.getElementById("notificacoes.html").className = 'active';
