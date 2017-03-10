@@ -17,13 +17,14 @@
     
     <div class="section no-pad-bot" id="index-banner">
       <div class="container">
-        <br>
         <h5 id="nome-turma" class="header center green-text">Matrizes Curriculares</h5>
+        <br>
         <div class="row center">
           <div class="col l3 m3 s0"></div>
           <div class="col l6 m6 s12">
             <div class="input-field">
-              <select belowOrigin="true">
+              <select id="selecionar-turma">
+                <option value="nothing" disabled selected></option>
                 <option value="ads">ADS</option>
               </select>
               <label>Curso</label>
@@ -32,8 +33,18 @@
           </div>
         </div>
         <div class="row center">
-          <a class="btn centered waves-effect waves-light red" onClick="document.getElementById('matriz').style.display = 'block'" href="#!">Ver</a>
+          <a class="btn centered waves-effect waves-light green" onClick="mostrarMatriz();" href="#!">Ver</a>
+          <div id="curso-modal" class="modal">
+            <div class="modal-content">
+              <h4><i class="small fa fa-close red-text"></i> Erro</h4>
+              <p class="center">Nenhum curso foi escolhido!</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat gray-text">Voltar</a>
+            </div>
+          </div>
         </div>
+        <br>
         <div id="matriz" style="display:none" class="col l12 s12">
           <h5 class="header center green-text">Matriz curricular de ADS</h5>
           <div class="row center">
@@ -251,7 +262,6 @@
           </div>
         </div>
       </div>
-      <br>
     </div>
 
     <div id="footer" class="footer"></div>

@@ -14,29 +14,29 @@
 }
 
 .input-field input[type=text]:focus + label {
-  color: #f44336;
+  color: #4caf50;
 }
 .input-field input[type=text]:focus {
-  border-bottom: 1px solid #f44336;
-  box-shadow: 0 1px 0 0 #f44336;
+  border-bottom: 1px solid #4caf50;
+  box-shadow: 0 1px 0 0 #4caf50;
 }
 .input-field input[type=password]:focus + label {
-  color: #f44336;
+  color: #4caf50;
 }
 .input-field input[type=password]:focus {
-  border-bottom: 1px solid #f44336;
-  box-shadow: 0 1px 0 0 #f44336;
+  border-bottom: 1px solid #4caf50;
+  box-shadow: 0 1px 0 0 #4caf50;
 }
 .input-field textarea.materialize-textarea:focus + label {
-  color: #f44336;
+  color: #4caf50;
 }
 .input-field textarea.materialize-textarea:focus {
-  border-bottom: 1px solid #f44336;
-  box-shadow: 0 1px 0 0 #f44336;
+  border-bottom: 1px solid #4caf50;
+  box-shadow: 0 1px 0 0 #4caf50;
 }
 
 .input-field .prefix.active {
-  color: #f44336;
+  color: #4caf50;
 }
 
 .tabs li.tab a {
@@ -59,12 +59,14 @@
 
 .holiday{
   font-weight: bold;
-  color: #f44336;
+  color: #ffffff;
+  background-color: #4caf50;
+  padding: 2px 
 }
 
-.checkbox-red[type="checkbox"].filled-in:checked + label:after{
-  border: 2px solid #f44336;
-  background-color: #f44336;
+.checkbox-green[type="checkbox"].filled-in:checked + label:after{
+  border: 2px solid #4caf50;
+  background-color: #4caf50;
 }
 
 ul.dropdown-content.select-dropdown li span {
@@ -186,14 +188,14 @@ ul.dropdown-content.select-dropdown li.disabled span {
 }
 
 .picker__weekday-display {
-  background-color: #d32f2f;
+  background-color: #388e3c;
 }
 .picker__date-display, .picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
-  background-color: #f44336;
+  background-color: #4caf50;
 }
 
 .picker__today, .picker__close, .picker__day.picker__day--today {
-  color: #f44336;
+  color: #4caf50;
 }
 
 button.picker__today:focus, button.picker__clear:focus, button.picker__close:focus {

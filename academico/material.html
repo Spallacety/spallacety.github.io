@@ -19,98 +19,91 @@
       <div class="container">
       <h5 id="nome-turma" class="header center green-text">Adicionar Material de Aula e Enviar Avisos</h5>
       <br>
-        <div id="escolher-turma" class="row center">
-          <div class="col l3 m3 s0"></div>
-          <div class="col l6 m6 s12">
-            <div class="input-field">
-              <select id="selecionar-turma">
-                <option value="nothing" disabled selected></option>
-                <option value="ads">IHC (ADS IV)</option>
-                <option value="tecnico">IHC (Técnico)</option>
-              </select>
-              <label>Selecione turma:</label>
-            </div>
-            <div class="row center">
-              <a class="btn waves-effect waves-light red" onClick="escolherTurma();" href="#!">Escolher turma</a>
-            </div>
-            <div id="turma-modal" class="modal">
-              <div class="modal-content">
-                <h4><i class="small fa fa-close red-text"></i> Erro</h4>
-                <p class="center">Nenhuma turma foi escolhida!</p>
-              </div>
-              <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat red-text">Voltar</a>
-              </div>
-            </div>
-            <div class="col l3 m3 s0"></div>
-          </div>
-        </div>
-        <div id="material" class="row center" style="display: none;">
-          <div id="aviso-btn" class="row center">
-            <a class="btn waves-effect waves-light red" onClick="mostrarFormAviso();" href="#!">Mandar aviso</a>
-          </div>
-          <div id="aviso" class="row center" style="display:none">
-            <div class="col s1 m3 l3"></div>
-            <div class="col s10 m6 l6">
-              <form>
-                <div class="input-field">
-                  <input id="matricula" type="text">
-                  <label for="matricula">Título</label>
-                </div>
-                <div class="input-field">
-                  <textarea id="textarea" class="materialize-textarea"></textarea>
-                  <label for="textarea">Detalhes do aviso</label>
-                </div>
-                <div class="center">
-                  <br>
-                  <button class="btn waves-effect waves-light red" onClick="enviarAviso()">Enviar aviso</button>
-                  <div id="aviso-modal" class="modal">
-                    <div class="modal-content">
-                      <h4><i class="small fa fa-check green-text"></i> Enviado</h4>
-                      <p class="center">O aviso foi enviado com sucesso.</p>
-                    </div>
-                    <div class="modal-footer">
-                      <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat red-text" onClick="esconderFormAviso();">Voltar</a>
-                    </div>
-                  </div>
-                  <br><br>
-                </div>
-              </form>
-            </div>
-            <div class="col s1 m3 l3"></div>
+      <div id="escolher-turma" class="row center">
+        <div class="col l3 m3 s0"></div>
+        <div class="col l6 m6 s12">
+          <div class="input-field">
+            <select id="selecionar-turma">
+              <option value="nothing" disabled selected></option>
+              <option value="ads">IHC (ADS IV)</option>
+              <option value="tecnico">IHC (Técnico)</option>
+            </select>
+            <label>Selecione turma:</label>
           </div>
           <div class="row center">
-            <div class="col l2 m2 s0"></div>
-            <div class="col l8 m8 s12">
+            <a class="btn waves-effect waves-light green" onClick="escolherTurma();" href="#!">Escolher turma</a>
+          </div>
+          <div id="turma-modal" class="modal">
+            <div class="modal-content">
+              <h4><i class="small fa fa-close red-text"></i> Erro</h4>
+              <p class="center">Nenhuma turma foi escolhida!</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat gray-text">Voltar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col l3 m3 s0"></div>
+      </div>
+
+        <div id="material" class="row center" style="display: none;">
+          <div id="aviso" class="col s12 m6 l6">
+            <h5 id="nome-turma" class="header center green-text">Aviso</h5>
+            <br>
+            <form>
+              <div class="input-field">
+                <input id="matricula" type="text">
+                <label for="matricula">Título</label>
+              </div>
+              <div class="input-field">
+                <textarea id="textarea" class="materialize-textarea"></textarea>
+                <label for="textarea">Detalhes do aviso</label>
+              </div>
+              <div class="center">
+                <br>
+                <button class="btn waves-effect waves-light green" onClick="enviarAviso()">Enviar aviso</button>
+                <div id="aviso-modal" class="modal">
+                  <div class="modal-content">
+                    <h4><i class="small fa fa-check green-text"></i> Enviado</h4>
+                    <p class="center">O aviso foi enviado com sucesso.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat gray-text">Voltar</a>
+                  </div>
+                </div>
+                <br><br>
+              </div>
+            </form>
+          </div>
+          <div class="col s12 m6 l6">
+            <h5 id="nome-turma" class="header center green-text">Material de Aula</h5>
+            <br>
             <form action="#">
               <div class="file-field input-field">
-                <div class="btn waves-effect waves-light red">
-                  <span>Escolher arquivo</span>
-                  <input type="file">
-                </div>
-                <div class="file-path-wrapper">
+                <div class="file-path-wrapper col s8">
                   <input id="nome-arquivo" class="file-path" type="text">
+                </div>
+                <div class="btn waves-effect waves-light green col s4">
+                  <span>Arquivo</span>
+                  <input type="file">
                 </div>
               </div>
             </form>
-            </div>
-            <div class="col l2 m2 s0"></div>
           </div>
           <div class="row center">
-            <a class="btn waves-effect waves-light red" href="#!" onClick="abrirModalArquivo();">Enviar</a>
+            <a class="btn waves-effect waves-light green" href="#!" onClick="abrirModalArquivo();">Enviar</a>
             <div id="arquivo-modal" class="modal">
               <div class="modal-content">
                 <h4><i class="small fa fa-check green-text"></i> Enviado</h4>
                 <p class="center">Arquivo enviado com sucesso.</p>
               </div>
               <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat red-text">Voltar</a>
+                <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat gray-text">Voltar</a>
               </div>
             </div>
           </div>
         </div>
         
-        </div>
       <br>
       </div>
     </div>

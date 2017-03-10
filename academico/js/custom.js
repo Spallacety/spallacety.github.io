@@ -19,7 +19,9 @@ $( window ).on( "load", function() {
 });
 
 $(document).ready(function() {
-  $('.modal').modal();
+  $('.modal').modal({
+    dismissible: false
+  });
   $('select').material_select();
 });
 
@@ -81,16 +83,6 @@ function login(){
   document.getElementById('button').style.display = 'none';
 }
 
-function esconderFormAviso(){
-  document.getElementById('aviso').style.display = 'none';
-  document.getElementById('aviso-btn').style.display = 'block';
-}
-
-function mostrarFormAviso(){
-  document.getElementById('aviso').style.display = 'block';
-  document.getElementById('aviso-btn').style.display = 'none';
-}
-
 function escolherTurma(){
   var conceptVal = $("#selecionar-turma option:selected").val();
 
@@ -111,11 +103,33 @@ function escolherTurma(){
   }
 }
 
-function escolherTurma(){
-  document.getElementById("nome-turma").innerHTML = "Turma de IHC (ADS IV)";
-  document.getElementById('tabela-nota').style.display = 'block';
-  document.getElementById('edit-btn').style.display = 'block';
-  document.getElementById('escolher-turma').style.display = 'none';
+function escolherTurmaNota(){
+  var conceptVal = $("#selecionar-turma option:selected").val();
+
+  switch(conceptVal){
+    case "ads":
+      document.getElementById("nome-turma").innerHTML = "Turma de IHC (ADS IV)";
+      document.getElementById('tabela-nota').style.display = 'block';
+      document.getElementById('edit-btn').style.display = 'block';
+      document.getElementById('escolher-turma').style.display = 'none';
+      break;
+    default:
+      $('#turma-modal').modal('open');
+      break;
+    }
+}
+
+function mostrarMatriz(){
+  var conceptVal = $("#selecionar-turma option:selected").val();
+
+  switch(conceptVal){
+    case "ads":
+      document.getElementById('matriz').style.display = 'block'
+      break;
+    default:
+      $('#curso-modal').modal('open');
+      break;
+    }
 }
 
 function editarNotas(){
@@ -134,10 +148,20 @@ function salvarNotas(){
 }
 
 function escolherDia(){
-  document.getElementById("nome-turma").innerHTML = "Escolher dia";
-  document.getElementById('mes-chamada').style.display = 'block';
-  document.getElementById('reposicao').style.display = 'block';
-  document.getElementById('escolher-turma').style.display = 'none';
+  var conceptVal = $("#selecionar-turma option:selected").val();
+
+  switch(conceptVal){
+    case "ads":
+      document.getElementById("nome-turma").innerHTML = "IHC (ADS IV) - Março";
+      document.getElementById('mes-chamada').style.display = 'block';
+      document.getElementById('reposicao').style.display = 'block';
+      document.getElementById('escolher-turma').style.display = 'none';
+      break;
+    default:
+      $('#turma-modal').modal('open');
+      break;
+  }
+
 }
 
 function aulaNormal(){
@@ -148,8 +172,7 @@ function aulaNormal(){
 }
 
 function aulaReposicao(){
+  aulaNormal();
   document.getElementById("nome-turma").innerHTML = "Turma de IHC (ADS IV) - Aula de Reposição";
-  document.getElementById('aula-reposicao').style.display = 'block';
-  document.getElementById('edit-btn2').style.display = 'block';
-  document.getElementById('mes-chamada').style.display = 'none';
+  document.getElementById('reposicao-aula').style.display = 'block';
 }
