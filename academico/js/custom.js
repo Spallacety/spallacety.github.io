@@ -12,6 +12,10 @@ $( window ).on( "load", function() {
     alignment: 'left',
     stopPropagation: false
   });
+  $('.datepicker').pickadate({
+    selectMonths: false,
+    selectYears: 1
+  });
 });
 
 $(document).ready(function() {
@@ -103,7 +107,7 @@ function escolherTurma(){
   }
 }
 
-function escolherTurmaNota(){
+function escolherTurma(){
   document.getElementById("nome-turma").innerHTML = "Turma de IHC (ADS IV)";
   document.getElementById('tabela-nota').style.display = 'block';
   document.getElementById('edit-btn').style.display = 'block';
@@ -123,4 +127,25 @@ function salvarNotas(){
     document.getElementById('edit-btn').style.display = 'block';
     document.getElementById('save-btn').style.display = 'none';
     $('#boletim-modal').modal('open');
+}
+
+function escolherDia(){
+  document.getElementById("nome-turma").innerHTML = "Escolher dia";
+  document.getElementById('mes-chamada').style.display = 'block';
+  document.getElementById('reposicao').style.display = 'block';
+  document.getElementById('escolher-turma').style.display = 'none';
+}
+
+function aulaNormal(){
+  document.getElementById("nome-turma").innerHTML = "Turma de IHC (ADS IV) - DD/MM/AAAA";
+  document.getElementById('aula').style.display = 'block';
+  document.getElementById('edit-btn').style.display = 'block';
+  document.getElementById('mes-chamada').style.display = 'none';
+}
+
+function aulaReposicao(){
+  document.getElementById("nome-turma").innerHTML = "Turma de IHC (ADS IV) - Aula de Reposição";
+  document.getElementById('aula-reposicao').style.display = 'block';
+  document.getElementById('edit-btn2').style.display = 'block';
+  document.getElementById('mes-chamada').style.display = 'none';
 }

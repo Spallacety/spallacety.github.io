@@ -14,27 +14,215 @@
 
   <div id="navbar-professor"></div>
 
-  <div id="content" class="section no-pad-bot">
+  <div class="section no-pad-bot">
     <div class="container">
+      <h5 id="nome-turma" class="header center green-text">Fazer chamada</h5>
       <br>
-     <div class="row center">
+      <div id="escolher-turma" class="row center">
         <div class="col l3 m3 s0"></div>
         <div class="col l6 m6 s12">
           <div class="input-field">
-            <select belowOrigin="true">
+            <select id="selecionar-turma">
+              <option value="nothing" disabled selected></option>
               <option value="ads">IHC (ADS IV)</option>
-              <option value="tecnico">IHC (Técnico)</option>
             </select>
             <label>Selecione turma:</label>
+          </div>
+          <div class="row center">
+            <a class="btn waves-effect waves-light red" onClick="escolherDia();" href="#!">Escolher turma</a>
+          </div>
+          <div id="turma-modal" class="modal">
+            <div class="modal-content">
+              <h4><i class="small fa fa-close red-text"></i> Erro</h4>
+              <p class="center">Nenhuma turma foi escolhida!</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat red-text">Voltar</a>
+            </div>
           </div>
           <div class="col l3 m3 s0"></div>
         </div>
       </div>
-      <div class="row center">
 
+      <div class="col l4 m6 s12" id="mes-chamada" style="display: none;">
+        <h5 class="header center green-text">Março</h5>
+        <table class="centered">
+          <thead>
+            <tr>
+              <th data-field="domingo">D</th>
+              <th data-field="segunda">S</th>
+              <th data-field="terca">T</th>
+              <th data-field="quarta">Q</th>
+              <th data-field="quinta">Q</th>
+              <th data-field="sexta">S</th>
+              <th data-field="sabado">S</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td><a class="holiday" href="#!" onClick="aulaNormal();">2</a></td>
+              <td><a class="holiday" href="#!" onClick="aulaNormal();">3</a></td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td><a class="holiday" href="#!" onClick="aulaNormal();">9</a></td>
+              <td><a class="holiday" href="#!" onClick="aulaNormal();">10</a></td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              <td><a class="holiday" href="#!" onClick="aulaNormal();">16</a></td>
+              <td><a class="holiday" href="#!" onClick="aulaNormal();">17</a></td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td><a class="holiday" href="#!" onClick="aulaNormal();">23</a></td>
+              <td><a class="holiday" href="#!" onClick="aulaNormal();">24</a></td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+              <td><a class="holiday" href="#!" onClick="aulaNormal();">30</a></td>
+              <td><a class="holiday" href="#!" onClick="aulaNormal();">31</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <div id="reposicao" class="row center" style="display: none;">
+          <a class="btn waves-effect waves-light red" href="#!" onClick="aulaReposicao();">Aula de reposição</a>
+        </div>        
+      </div>
+
+      <div id="aula" class="container" style="display: none;">
+        <div class="row center">
+          <form action="#!">
+            <table class="bordered striped">
+              <thead>
+                <tr>
+                  <th width="30%"data-field="mat">Matricula</th>
+                  <th width="60%" data-field="nome">Nome</th>
+                  <th width="5%" data-field="presenca">Pres</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>20151ADS0277</td>
+                  <td>Lucas Rodrigues</td>
+                  <td>
+                    <input type="checkbox" class="filled-in checkbox-red" id="test1"/>
+                    <label for="test1"></label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>20151ADS0000</td>
+                  <td>Luiza Mendes</td>
+                  <td>
+                    <input type="checkbox" class="filled-in checkbox-red" id="test2"/>
+                    <label for="test2"></label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>20151ADS0000</td>
+                  <td>Marlysson Silva</td>
+                  <td>
+                    <input type="checkbox" class="filled-in checkbox-red" id="test3"/>
+                    <label for="test3"></label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+      <div id="edit-btn" class="row center" style="display: none;">
+        <a class="btn waves-effect waves-light red" href="#!">Salvar</a>
       </div>
       <br>
     </div>
+
+    <div id="aula-reposicao" class="container" style="display: none;">
+        <div class="row center">
+          <form action="#!">
+            <div class="col s10 input-field">
+              <input type="date" placeholder="Data" class="datepicker" id="data-aula">
+              <label for="data-aula"></label>
+            </div>
+            <div class="col s2 input-field">
+              <input type="text" id="aulas">
+              <label for="aulas">Num. Aulas</label>
+            </div>
+            <table class="bordered striped">
+              <thead>
+                <tr>
+                  <th width="30%"data-field="mat">Matricula</th>
+                  <th width="60%" data-field="nome">Nome</th>
+                  <th width="5%" data-field="presenca">Pres</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>20151ADS0277</td>
+                  <td>Lucas Rodrigues</td>
+                  <td>
+                    <input type="checkbox" class="filled-in checkbox-red" id="test1"/>
+                    <label for="test1"></label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>20151ADS0000</td>
+                  <td>Luiza Mendes</td>
+                  <td>
+                    <input type="checkbox" class="filled-in checkbox-red" id="test2"/>
+                    <label for="test2"></label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>20151ADS0000</td>
+                  <td>Marlysson Silva</td>
+                  <td>
+                    <input type="checkbox" class="filled-in checkbox-red" id="test3"/>
+                    <label for="test3"></label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+      <div id="edit-btn2" class="row center" style="display: none;">
+        <a class="btn waves-effect waves-light red" href="#!">Salvar</a>
+      </div>
+      <br>
+    </div>
+
   </div>
 
   <div id="footer"></div>

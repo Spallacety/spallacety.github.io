@@ -184,3 +184,18 @@ ul.dropdown-content.select-dropdown li.disabled span {
 .btn-flat:focus, .btn-flat:hover {
   background-color: transparent;
 }
+
+.picker__weekday-display {
+  background-color: #d32f2f;
+}
+.picker__date-display, .picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+  background-color: #f44336;
+}
+
+.picker__today, .picker__close, .picker__day.picker__day--today {
+  color: #f44336;
+}
+
+button.picker__today:focus, button.picker__clear:focus, button.picker__close:focus {
+  background-color: transparent;
+}
