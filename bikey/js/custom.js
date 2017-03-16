@@ -2,6 +2,12 @@ $( window ).on( "load", function() {
   initMap();
 });
 
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
+
+$('#login').webuiPopover({url:'#login-form',placement:'bottom'});
+
 function initMap() {
 
   var myLatlng = new google.maps.LatLng(-5.0920, -42.8037);
