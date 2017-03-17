@@ -1,7 +1,6 @@
 $( window ).on( "load", function() {
   $('#navbar-index').load("common/navbar-index.html");
   $('#navbar-aluno').load("common/navbar-aluno.html");
-  $('#navbar-professor').load("common/navbar-professor.html");
   $('#footer').load("common/footer.html");
   var res = window.location.pathname.split("/");
   var activeClass = res.pop().split(".");
