@@ -16,6 +16,7 @@ $( window ).on( "load", function() {
     selectMonths: false,
     selectYears: 1
   });
+  $(".button-collapse").sideNav();
 });
 
 $(document).ready(function() {
@@ -34,7 +35,6 @@ $(document).click(function(event) {
 });
 
 $('#navbar-index').load("common/navbar-index.html");
-$('#navbar-professor').load("common/navbar-professor.html");
 $('#footer').load("common/footer.html");
 
 function verificarLogin() {
