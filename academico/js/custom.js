@@ -1,6 +1,7 @@
 $( window ).on( "load", function() {
   var res = window.location.pathname.split("/");
-  document.getElementById(res.pop()).className = 'active';
+  var activeClass = res.pop().split(".");
+  document.getElementById(activeClass.reverse().pop()).className = 'active';
   $('.tooltipped').tooltip({delay: 50});
   $(".dropdown-button").dropdown({
     inDuration: 300,
