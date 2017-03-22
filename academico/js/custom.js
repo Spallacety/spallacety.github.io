@@ -16,7 +16,6 @@ $( window ).on( "load", function() {
     selectMonths: false,
     selectYears: 1
   });
-  $(".button-collapse").sideNav();
 });
 
 $(document).ready(function() {
@@ -35,6 +34,8 @@ $(document).click(function(event) {
 });
 
 $('#navbar-index').load("common/navbar-index.html");
+$('#navbar-aluno').load("common/navbar-aluno.html");
+$('#navbar-professor').load("common/navbar-professor.html");
 $('#footer').load("common/footer.html");
 
 function verificarLogin() {
@@ -71,6 +72,14 @@ function aulaRegistrada(){
   $('#aula-modal').modal('open');
 }
 
+function abrirModalAlunoChamada(){
+  $('#aluno-chamada').modal('open');
+}
+
+function abrirModalAlunoNota(){
+  $('#aluno-nota').modal('open');
+}
+
 function clickNotificacao(){
   if(!document.getElementById("notificacoes.html").classList.contains('active')){
     document.getElementById("notificacoes.html").className = 'active';
@@ -89,17 +98,27 @@ function escolherTurma(){
     case "ads":
       document.getElementById("nome-turma").innerHTML = "Enviar para turma de IHC (ADS IV)";
       document.getElementById('escolher-turma').style.display = 'none';
-      document.getElementById('material').style.display = 'block';
+      document.getElementById('escolher').style.display = 'block';
       break;
     case "tecnico":
       document.getElementById("nome-turma").innerHTML = "Enviar para turma de IHC (Técnico)";
       document.getElementById('escolher-turma').style.display = 'none';
-      document.getElementById('material').style.display = 'block';
+      document.getElementById('escolher').style.display = 'block';
       break;
     default:
       $('#turma-modal').modal('open');
       break;
   }
+}
+
+function mandarAviso(){
+  document.getElementById('escolher').style.display = 'none';
+  document.getElementById('mandar-aviso').style.display = 'block';
+}
+
+function mandarMaterial(){
+  document.getElementById('escolher').style.display = 'none';
+  document.getElementById('mandar-material').style.display = 'block';
 }
 
 function escolherTurmaNota(){
@@ -108,8 +127,8 @@ function escolherTurmaNota(){
   switch(conceptVal){
     case "ads":
       document.getElementById("nome-turma").innerHTML = "Turma de IHC (ADS IV)";
-      document.getElementById('tabela-nota').style.display = 'block';
-      document.getElementById('edit-btn').style.display = 'block';
+      document.getElementById('tabela-edit-nota').style.display = 'block';
+      document.getElementById('save-btn').style.display = 'block';
       document.getElementById('escolher-turma').style.display = 'none';
       break;
     default:
@@ -131,18 +150,7 @@ function mostrarMatriz(){
     }
 }
 
-function editarNotas(){
-    document.getElementById('tabela-nota').style.display = 'none';
-    document.getElementById('tabela-edit-nota').style.display = 'block';
-    document.getElementById('edit-btn').style.display = 'none';
-    document.getElementById('save-btn').style.display = 'block';
-}
-
 function salvarNotas(){
-    document.getElementById('tabela-nota').style.display = 'block';
-    document.getElementById('tabela-edit-nota').style.display = 'none';
-    document.getElementById('edit-btn').style.display = 'block';
-    document.getElementById('save-btn').style.display = 'none';
     $('#boletim-modal').modal('open');
 }
 

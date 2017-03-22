@@ -13,69 +13,7 @@
 <body>
   <div class="geral">
      
-     <nav class="green" role="navigation">
-  <div class="nav-wrapper container">
-    <a id="logo-container" href="#" class="brand-logo">AcademIFPI</a>
-    <ul class="right hide-on-med-and-down">
-      <li id="boletim.html"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Horário e Boletim" href="boletim.html"><i class="small fa fa-bar-chart white-text"></i></a></li>
-      <li id="historico.html"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Histórico Escolar" href="historico.html"><i class="small fa fa-clock-o white-text"></i></a></li>
-      <li id="matricula.html"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Pedido de Matrícula" href="matricula.html"><i class="small fa fa-edit white-text"></i></a></li>
-      <li id="matriz.html"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Matriz Curricular" href="matriz.html"><i class="small fa fa-book white-text"></i></a></li>
-      <li id="calendario.html"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Calendário Acadêmico" href="calendario.html"><i class="small fa fa-calendar white-text"></i></a></li>
-      <li id="notificacoes.html"><a class="tooltipped dropdown-button" data-position="bottom" data-delay="50" data-tooltip="Notificações" data-activates="notificacoes" href="#!" onClick="clickNotificacao();"><i class="small fa fa-bell white-text"></i></a></li>
-      <li id="perfil.html"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Perfil" href="perfil.html"><i class="small fa fa-user white-text"></i></a></li>
-      <li id="sair"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Sair" href="#!" onClick="abrirModalSair();"><i class="small fa fa-close white-text"></i></a></li>
-    </ul>
-
-    <ul id="nav-mobile" class="side-nav">
-      <li id="boletim.html"><a href="boletim.html">Horário e Boletim</a></li>
-      <li id="historico.html"><a href="historico.html">Histórico Escolar</a>
-      <li id="matricula.html"><a href="matricula.html">Pedido de Matrícula</a>
-      <li id="matriz.html"><a href="matriz.html">Matriz Curricular</a>
-      <li id="calendario.html"><a href="calendario.html">Calendário Acadêmico</a>
-      <li id="notificacoes.html"><a href="notificacoes.html">Notificações</a>
-      <li id="perfil.html"><a href="perfil.html">Perfil</a>
-      <li id="sair" onClick="abrirModalSair();"><a href="#!">Sair</a>
-    </ul>
-
-    <div id="logout-modal" class="modal">
-      <div class="modal-content">
-        <h4 class="black-text center"><i class="small fa fa-times red-text text-lighten-1"></i> Sair</h4>
-        <p class="black-text center">Deseja realmente sair?</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat gray-text text-lighten-1">Voltar</a>
-        <a href="index.html" class=" modal-action modal-close waves-effect waves-light btn-flat gray-text text-lighten-1">Sair</a>
-      </div>
-    </div>
-
-    <ul id="notificacoes" class='dropdown-content no-shadow lined'>
-      <li class="item-notificacao fixed">
-        <span class="icon-color ihc"></span>
-        <p class="titulo-notificacao">Interação Humano-Computador</p>
-        <p class="conteudo-notificacao">Prova marcada para <span class="destaque">23/02/2017</span><p>
-        <p class="data-postagem">Ontem</p>
-      </li>
-      <li class="item-notificacao fixed">
-        <span class="icon-color eng-soft"></span>
-        <p class="titulo-notificacao">Engenharia de Software 1</p>
-        <p class="conteudo-notificacao">Falta registrada em <span class="destaque">11/02/2017</span></p>
-        <p class="data-postagem">11/02/2017</p>
-      </li>
-      <li class="item-notificacao fixed">
-        <span class="icon-color proj-bd"></span>
-        <p class="titulo-notificacao">Projeto de Banco de Dados</p>
-        <p class="conteudo-notificacao">Novo material adicionado.</p>
-        <p class="data-postagem">14/02/2017</p>
-      </li>
-      <li class="item-notificacao fixed">
-        <a href="notificacoes.html" class="black-text center">Mostrar todas</a>
-      </li>
-    </ul>
-
-    <a href="#!" data-activates="nav-mobile" class="button-collapse"><i class="small fa fa-bars white-text"></i></a>
-  </div>
-</nav>
+    <div id="navbar-aluno"></div>
 
     <div class="section no-pad-bot" id="index-banner">
       <div class="container">
@@ -157,7 +95,7 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td><a class="white-text">.</a></td>
                 </tr>
               </tbody>
             </table>
@@ -229,7 +167,7 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td><a class="white-text">.</a></td>
                 </tr>
               </tbody>
             </table>
@@ -301,13 +239,11 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td><a class="white-text">.</a></td>
                 </tr>
               </tbody>
             </table>
           </div>
-        </div>
-        <div class="row center">
           <div class="col l4 m6 s12">
             <h5 class="header center green-text">Abril</h5>
             <table class="centered">
@@ -375,7 +311,7 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td><a class="white-text">.</a></td>
                 </tr>
               </tbody>
             </table>
@@ -447,7 +383,7 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td><a class="white-text">.</a></td>
                 </tr>
               </tbody>
             </table>
@@ -519,7 +455,7 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td><a class="white-text">.</a></td>
                 </tr>
               </tbody>
             </table>
@@ -595,7 +531,7 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td><a class="white-text">.</a></td>
                 </tr>
               </tbody>
             </table>
@@ -667,7 +603,7 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td><a class="white-text">.</a></td>
                 </tr>
               </tbody>
             </table>
@@ -739,13 +675,11 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td><a class="white-text">.</a></td>
                 </tr>
               </tbody>
             </table>
           </div>
-        </div>
-        <div class="row center">
           <div class="col l4 m6 s12">
             <h5 class="header center green-text">Outubro</h5>
             <table class="centered">
@@ -813,7 +747,7 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td><a class="white-text">.</a></td>
                 </tr>
               </tbody>
             </table>
@@ -885,7 +819,7 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td><a class="white-text">.</a></td>
                 </tr>
               </tbody>
             </table>
@@ -957,7 +891,7 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td><a class="white-text">.</a></td>
                 </tr>
               </tbody>
             </table>

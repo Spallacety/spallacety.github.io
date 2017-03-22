@@ -13,43 +13,7 @@
 <body>
   <div class="geral">
      
-<nav class="green" role="navigation">
-  <div class="nav-wrapper container">
-    <a id="logo-container" href="#" class="brand-logo">AcademIFPI</a>
-    <ul class="right hide-on-med-and-down">
-      <li id="chamada.html"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Fazer Chamada" href="chamada.html"><i class="small fa fa-check-square white-text"></i></a></li>
-      <li id="notas.html"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Atribuir Notas" href="notas.html"><i class="small fa fa-sort-numeric-asc white-text"></i></a></li>
-      <li id="material.html"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Adicionar Material de Aula e Enviar Avisos" href="material.html"><i class="small fa fa-plus-square white-text"></i></a></li>
-      <li id="matriz-p.html"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Matrizes Curriculares" href="matriz-p.html"><i class="small fa fa-book white-text"></i></a></li>
-      <li id="calendario-p.html"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Calendário Acadêmico" href="calendario-p.html"><i class="small fa fa-calendar white-text"></i></a></li>
-      <li id="perfil-p.html"><a class="tooltipped dropdown-button" data-position="bottom" data-delay="50" data-tooltip="Perfil e Horários" href="perfil-p.html"><i class="small fa fa-user white-text"></i></a></li>
-      <li id="sair"><a class="tooltipped dropdown-button" data-position="bottom" data-delay="50" data-tooltip="Sair" href="#!" onClick="abrirModalSair();"><i class="small fa fa-close white-text"></i></a></li>
-    </ul>
-
-    <ul id="nav-mobile" class="side-nav">
-      <li id="chamada.html"><a href="chamada.html">Fazer Chamada</a></li>
-      <li id="notas.html"><a href="notas.html">Atribuir Notas</a>
-      <li id="material.html"><a href="material.html">Adicionar Material de Aula e Enviar Avisos</a>
-      <li id="matriz-p.html"><a href="matriz-p.html">Matrizes Curriculares</a>
-      <li id="calendario-p.html"><a href="calendario-p.html">Calendário Acadêmico</a>
-      <li id="perfil-p.html"><a href="perfil-p.html">Perfil e Horários</a>
-      <li id="sair" onClick="abrirModalSair();"><a href="#!">Sair</a>
-    </ul>
-
-    <div id="logout-modal" class="modal">
-      <div class="modal-content">
-        <h4 class="black-text center"><i class="small fa fa-times red-text text-lighten-1"></i> Sair</h4>
-        <p class="black-text center">Deseja realmente sair?</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat gray-text text-lighten-1">Voltar</a>
-        <a href="index.html" class=" modal-action modal-close waves-effect waves-light btn-flat gray-text text-lighten-1">Sair</a>
-      </div>
-    </div>
-
-    <a href="#!" data-activates="nav-mobile" class="button-collapse"><i class="small fa fa-bars white-text"></i></a>
-  </div>
-</nav>
+    <div id="navbar-professor"></div>
 
     <div class="section no-pad-bot">
       <div class="container">
@@ -80,42 +44,9 @@
             <div class="col l3 m3 s0"></div>
           </div>
         </div>
-        <div id="tabela-nota" class="container" style="display: none;">
-          <div class="row center">
-            <table class="bordered striped">
-              <thead>
-                <tr>
-                  <th width="30%"data-field="mat">Matricula</th>
-                  <th width="60%" data-field="nome">Nome</th>
-                  <th width="5%" data-field="ms">M.S.</th>
-                  <th width="5%" data-field="rec">Rec.</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>20151ADS0277</td>
-                  <td>Lucas Rodrigues</td>
-                  <td>9</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>20151ADS0000</td>
-                  <td>Luiza Mendes</td>
-                  <td>9</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>20151ADS0000</td>
-                  <td>Marlysson Silva</td>
-                  <td>9</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
         <div id="tabela-edit-nota" class="container" style="display: none">
           <div class="row center">
+            <p class="center">Você pode clicar ou tocar no nome do aluno para abrir a página de perfil dele.</p>
             <table class="bordered striped">
               <thead>
                 <tr>
@@ -127,42 +58,42 @@
               </thead>
               <tbody>
                 <tr>
-                  <td height="10">20151ADS0277</td>
-                  <td height="10">Lucas Rodrigues</td>
-                  <td height="10" id="edit-nota">
+                  <td>20151ADS0277</td>
+                  <td><a class="green-text" onClick="abrirModalAlunoNota();" href="#!">Lucas Rodrigues</a></td>
+                  <td id="edit-nota">
                     <div class="input-field">
                       <input value="9" type="text">
                     </div>
                   </td>
-                  <td height="10" id="edit-rec">
+                  <td id="edit-rec">
                     <div class="input-field">
                       <input type="text">
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <td height="10">20151ADS0000</td>
-                  <td height="10">Luiza Mendes</td>
-                  <td height="10" id="edit-nota">
+                  <td>20151ADS0000</td>
+                  <td><a class="green-text" onClick="abrirModalAlunoNota();" href="#!">Luiza Mendes</a></td>
+                  <td id="edit-nota">
                     <div class="input-field">
                       <input value="9" type="text">
                     </div>
                   </td>
-                  <td height="10" id="edit-rec">
+                  <td id="edit-rec">
                     <div class="input-field">
                       <input type="text">
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <td height="10">20151ADS0000</td>
-                  <td height="10">Marlysson Silva</td>
-                  <td height="10" id="edit-nota">
+                  <td>20151ADS0000</td>
+                  <td><a class="green-text" onClick="abrirModalAlunoNota();" href="#!">Marlysson Silva</a></td>
+                  <td id="edit-nota">
                     <div class="input-field">
                       <input value="9" type="text">
                     </div>
                   </td>
-                  <td height="10" id="edit-rec">
+                  <td id="edit-rec">
                     <div class="input-field">
                       <input type="text">
                     </div>
@@ -170,6 +101,16 @@
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+        <div id="aluno-nota" class="modal">
+          <div class="modal-content">
+            <h4><i class="small fa fa-warning amber-text"></i> Atenção</h4>
+            <p class="center">Se você continuar, perderá as notas digitadas e não salvas. Prosseguir?</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat gray-text">Não</a>
+            <a href="perfil-lucas-p.html" class=" modal-action modal-close waves-effect waves-light btn-flat gray-text">Sim</a>
           </div>
         </div>
         <div id="boletim-modal" class="modal">
@@ -180,9 +121,6 @@
           <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat gray-text">Voltar</a>
           </div>
-        </div>
-        <div id="edit-btn" class="row center" style="display: none;">
-          <a class="btn waves-effect waves-light green" href="#!" onClick="editarNotas();">Editar</a>
         </div>
         <div id="save-btn" class="row center" style="display:none">
           <a class="btn waves-effect waves-light green" href="#!" onClick="salvarNotas();">Salvar</a>
