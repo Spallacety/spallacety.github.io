@@ -1,0 +1,94 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.button-nav{
+  font-size: 20px;
+}
+
+.container{
+  padding: 4em 0 4em 0;
+}
+
+hr {
+  border: 0;
+  border-top: solid 1px #444;
+  border-top-color: rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
+  height: 1px;
+}
+
+ul.social {
+  padding: 1em 0.5em 0 0.5em;
+  cursor: default;
+  margin: 0;
+}
+
+ul.social li {
+  position: relative;
+  display: inline-block;
+  margin: 0.25em;
+  top: 0;
+}
+
+ul.social li a {
+  -moz-transition: top .2s ease-in-out;
+  -webkit-transition: top .2s ease-in-out;
+  -ms-transition: top .2s ease-in-out;
+  transition: top .2s ease-in-out;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  top: 0;
+  position: relative;
+}
+
+ul.social li a:before {
+  -moz-transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color .2s ease-in-out;
+  -ms-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  background-color: #333;
+  border-radius: 6px;
+  color: #212121 !important;
+  display: block;
+  font-size: 26px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  outline: 0;
+  overflow: hidden;
+  width: 48px;
+}
+
+ul.social li a.fa-twitter {
+  background-color: #2DAAE4;
+}
+
+ul.social li a.fa-facebook {
+  background-color: #3C5A98;
+}
+
+ul.social li a.fa-github {
+  background-color: #FAFAFA;
+}
+
+ul.social li a:hover {
+  top: -5px;
+}
+
+ul.social li a:hover:before {
+  background-color: transparent;
+}
