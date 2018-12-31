@@ -14,14 +14,14 @@
   <nav class="grey darken-4" role="navigation">
     <div class="nav-wrapper container"><a class="brand-logo white-text">CZPVP</a>
       <ul class="right hide-on-med-and-down">
-        <li><a class="white-text">{num} players online</a></li>
+        <li><a class="white-text"><span class="jogadores" data-playercounter-ip="149.56.29.162:63242">0</span> players online</a></li>
         <li><a href="https://loja.czpvp.com.br/" target="_blank" class="white-text">Loja</a></li>
         <li><a href="https://czpvp.com.br/forum/" target="_blank" class="white-text">Fórum</a></li>
         <li><a onclick="M.toast({html: 'Copiado!', classes: 'rounded'})" class="white-text copy-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clique para copiar" data-clipboard-text="jogar.czpvp.com.br">jogar.czpvp.com.br</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a>{num} players online</a></li>
+        <li><a><span class="jogadores" data-playercounter-ip="149.56.29.162:63242">0</span> players online</a></li>
         <li><a href="https://loja.czpvp.com.br/" target="_blank">Loja</a></li>
         <li><a href="https://czpvp.com.br/forum/" target="_blank">Fórum</a></li>
         <li><a onclick="M.toast({html: 'Copiado!', classes: 'rounded'})" class="copy-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clique para copiar" data-clipboard-text="jogar.czpvp.com.br">jogar.czpvp.com.br</a></li>
@@ -158,6 +158,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
@@ -179,6 +180,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter@1.1.1/dist/mc-player-counter.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
