@@ -1,0 +1,121 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+ul.social {
+  padding: 1em 0.5em 0 0.5em;
+  cursor: default;
+  margin: 0;
+}
+
+ul.social li {
+  position: relative;
+  display: inline-block;
+  margin: 0.25em;
+  top: 0;
+}
+
+ul.social li a {
+  -moz-transition: top .2s ease-in-out;
+  -webkit-transition: top .2s ease-in-out;
+  -ms-transition: top .2s ease-in-out;
+  transition: top .2s ease-in-out;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  top: 0;
+  position: relative;
+}
+
+ul.social li a:before {
+  -moz-transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color .2s ease-in-out;
+  -ms-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  background-color: #333;
+  border-radius: 6px;
+  color: #212121 !important;
+  display: block;
+  font-size: 26px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  outline: 0;
+  overflow: hidden;
+  width: 48px;
+}
+
+ul.social li a.fa-twitter {
+  background-color: #2DAAE4;
+}
+
+ul.social li a.fa-discord {
+  background-color: #7289da;
+}
+
+ul.social li a.fa-youtube {
+  background-color: #ff0000;
+}
+
+ul.social li a:hover {
+  top: -5px;
+}
+
+ul.social li a:hover:before {
+  background-color: transparent;
+}

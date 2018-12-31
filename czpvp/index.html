@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>CZPVP » Home</title>
+  <link rel="shortcut icon" type="image/png" href="img/logosv.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="grey darken-4" role="navigation">
+    <div class="nav-wrapper container"><a class="brand-logo white-text">CZPVP</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="white-text">{num} players online</a></li>
+        <li><a href="https://loja.czpvp.com.br/" target="_blank" class="white-text">Loja</a></li>
+        <li><a href="https://czpvp.com.br/forum/" target="_blank" class="white-text">Fórum</a></li>
+        <li><a onclick="M.toast({html: 'Copiado!', classes: 'rounded'})" class="white-text copy-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clique para copiar" data-clipboard-text="jogar.czpvp.com.br">jogar.czpvp.com.br</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a>{num} players online</a></li>
+        <li><a href="https://loja.czpvp.com.br/" target="_blank">Loja</a></li>
+        <li><a href="https://czpvp.com.br/forum/" target="_blank">Fórum</a></li>
+        <li><a onclick="M.toast({html: 'Copiado!', classes: 'rounded'})" class="copy-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clique para copiar" data-clipboard-text="jogar.czpvp.com.br">jogar.czpvp.com.br</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="header center"><img src="img/logosv.png"></div>
+        <div class="row"></div>
+        <div class="row"></div><div class="row"></div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background.png"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <br>
+
+      <div class="row center">
+        <a href="https://czpvp.com.br/forum/" target="_blank" class="btn-large waves-effect waves-light red darken-4"><b>Clique aqui para acessar o nosso FÓRUM</b></a>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-4"><i class="material-icons">attach_money</i></h2>
+            <h5 class="center">Visite nossa loja</h5>
+            <p class="light center">Na nossa loja você pode comprar qualquer VIP e ver todas as suas vantagens! Escolha seu servidor abaixo:</p>
+            <div class="row center">
+              <a href="https://loja.czpvp.com.br/" target="_blank" class="btn waves-effect waves-light red darken-4">RankUP</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-4"><i class="material-icons">check</i></h2>
+            <h5 class="center">Vote no servidor</h5>
+            <p class="light center">Clique nos botões abaixo para votar no servidor. Lembre-se de colocar seu nick do servidor corretamente no lugar indicado e esteja logado no servidor para receber sua recompensa.</p>
+            <div class="row center">
+              <a href="https://minecraft-mp.com/server/185350/vote/" target="_blank" class="btn waves-effect waves-light red darken-4">Minecraft - MP</a>
+            </div>
+            <div class="row center">
+              <a href="https://minecraftservers.org/server/482353" target="_blank" class="btn waves-effect waves-light red darken-4">Minecraft Servers</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-4"><i class="material-icons">list</i></h2>
+            <h5 class="center">Regras</h5>
+            <p class="light center">Siga a regras de nosso servidor para não ter problemas! Veja todo nosso conjunto de regras:</p>
+            <div class="row center">
+              <a href="#modal-regras" target="_blank" class="btn waves-effect waves-light red darken-4 modal-trigger">Regras</a>
+            </div>
+            <div id="modal-regras" class="modal">
+              <div class="modal-content">
+                <h4><b>REGRAS DE CONDUTA DO SERVIDOR</b></h4>
+                <h5>Desconhecimento das regras não é motivo para remoção ou diminuição da punição.</h5>
+                <br>
+                <h6><b>Respeito a jogadores e membros da nossa comunidade</b></h6>
+                <p>A CZNetwork é uma rede de servidores de Minecraft comprometida com seus jogadores e com seu bem-estar enquanto usuários de nossos serviços, para isso, o respeito é de extrema importância. Portanto, visando o respeito entre os jogadores, é proibido em nossos servidores:</b></h6>
+                <ul>
+                  <li>• Divulgar informações falsas ou mentirosas;</li>
+                  <li>• Utilizar nicknames ou skins ofensivas;</li>
+                  <li>• Agir de forma xenofóbica, racista, homofóbica ou sexista;</li>
+                  <li>• Denunciar jogadores com informações falsas;</li>
+                  <li>• Ofender jogadores;</li>
+                  <li>• Invadir contas de outros jogadores;</li>
+                  <li>• Compartilhar informações pessoais de outros jogadores;</li>
+                </ul>
+                <h6><b>Respeito ao servidor</b></h6>
+                <p>Em nossos servidores o respeito entre nossa equipe e jogadores é crucial,
+                  então por isso é importante que a comunidade respeite o servidor e os membros de sua equipe de moderação.
+                </p>
+                <h6><b>Trapaça e Abuso de Bugs</b></h6>
+                <p>Para que nossa comunidade tenha um jogo justo, nenhum outro jogador deve obter vantagens ilícitas,
+                  sejam elas adquiridas através de clientes alternativos (chamados também de hacks) ou por meio do abuso de bugs do servidor em benefício próprio.
+                  Portanto, é proibido em nossos servidores:
+                </p>
+                <ul>
+                  <li>• Utilizar qualquer cliente de Minecraft alternativo que possua funcionalidades que possam beneficiar o jogador que o utilizar;</li>
+                  <li>• Utilizar autoclick (programa para realizar clicks automaticamente e de forma mais rápida);</li>
+                  <li>• Utilizar macros que possam dar vantanges ao jogador (com exceção de Macro de Texto [5ZIG e LABYMOD]);</li>
+                  <li>• Utilizar mods não especificamente permitidos em nossa lista de mods permitidos;</li>
+                  <li>• Abusar de quaisquer erros presentes em nosso servidor para benefício próprio;</li>
+                  <li>• Deixar de reportar erros presentes em nosso servidor mesmo tendo conhecimento sobre tais.</li>
+                </ul>
+                <h6><b>Propaganda e divulgação</b></h6>
+                <p>A CZNetwork não possui nenhuma relação com nenhum outro site de nenhum outro segmento, muito menos com outros servidores.</p>
+                <br>
+                <p>Apenas são Youtubers oficialmente reconhecidos aqueles que possuem a tag “[Youtuber]”,
+                  portanto, canais no Youtube ou outras plataformas não devem ser divulgados. Portanto, é proibido em nossos servidores:
+                </p>
+                <ul>
+                  <li>• Divulgar qualquer site que não seja o oficial de nossa rede;</li>
+                  <li>• Divulgar qualquer canal em plataformas como o Youtube;</li>
+                  <li>• Divulgar qualquer outro servidor de Minecraft ou outro jogo;</li>
+                  <li>• Divulgar lojas de qualquer tipo;</li>
+                  <li>• Enviar qualquer link externo que não seja proveniente de um de nossos domínios oficiais;</li>
+                </ul>
+                <h6><b>Comércio</b></h6>
+                <p>A CZNetwork condena qualquer tipo de troca comercial em nosso fórum ou servidor. Portanto, é proibido em nossos servidores:</p>
+                <ul>
+                  <li>• Realizar trocas envolvendo contas de jogadores;</li>
+                  <li>• Realizar a venda de VIPs ou Cash para outros jogadores em troca de qualquer outra coisa;</li>
+                  <li>• Promover sorteios, loterias e qualquer outro jogo do tipo sem a autorização prévia da equipe;</li>
+                </ul>
+                <h6><b>Informações Extras</b></h6>
+                <p>É importante explicar algumas coisas aos membros de nossa comunidade relativas às nossas regras.</p>
+                <ul>
+                  <li>• Jogadores que não seguirem as regras apresentadas acima serão punidos. Lembrando que você pode denunciar um jogador na área
+                  de denúncias de nosso fórum;</li>
+                  <li>• É possivel aplicar para uma revisão de sua punição caso acredite que sua punição tenha sido injusta, para isso acesse a área de
+                  revisão de bans em nosso fórum;</li>
+                  <li>• Membros da equipe jamais pedirão sua senha;</li>
+                  <li>• Membros da equipe jamais pedirão que você utilize Skype para compartilhamento de sua tela;</li>
+                  <li>• As regras podem ser alteradas sem aviso prévio, caso necessário.</li>
+                </ul>
+                <p>Regras se tornarão válidas a partir do momento de sua publicação, sem aviso prévio.</p>
+                <br>
+                <p>Editado pela última vez em: 01/01/2019</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row center">
+        <h5 class="white-text">Nossas redes sociais:</h5>
+        <ul class="social">
+          <li><a href="https://twitter.com/ServidoresCZ" class="icon fab fa-twitter tooltipped" data-position="top" data-delay="50" data-tooltip="Twitter"></a></li>
+          <li><a href="https://discord.gg/ZEFtyz2" class="icon fab fa-discord tooltipped" data-position="top" data-delay="50" data-tooltip="Discord"></a></li>
+          <li><a href="https://www.youtube.com/crashytop" class="icon fab fa-youtube tooltipped" data-position="top" data-delay="50" data-tooltip="YouTube"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center">
+      CZPVP© 2019 - Todos os direitos reservados. Design por <a class="grey-text " href="http://spallacety.tk">Spallacety</a>.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
