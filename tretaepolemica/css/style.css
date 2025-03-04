@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #202325;
+    color: #E8E6E3;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #181A1B;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.player-names, .points-target {
+    margin-bottom: 20px;
+}
+.points-target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.points-target label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+}
+.points-target input[type="number"] {
+    width: 50px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    border-color: #3E4446;
+}
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-color: #3E4446;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #272A2B;
+    color: #FBFBFE;
+}
+input[type="text"] {
+    width: 80%;
+    margin-bottom: 20px;
+}
+input::placeholder {
+    color: #6F6B6A;
+}
+select {
+    padding: 8px;
+    width: 74%;
+    margin-top: 10px;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2B559E;
+    color: #E8E6E3;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+button:hover {
+    background-color: #264C8C;
+}
+.green-button {
+    background-color: #10833E;
+}
+.green-button:hover {
+    background-color: #0D7035;
+}
+.red-button {
+    background-color: #961D31;
+}
+.red-button:hover {
+    background-color: #85192D;
+}
+.game-section {
+    display: none;
+}
+.current-player {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.word-display {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.start-game-button {
+    display: block;
+    margin-top: 20px;
+}
+.podium-table {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+.podium-table th, .podium-table td {
+    padding: 10px;
+    border: 1px solid #3A3E41;
+}
+.podium-table th {
+    background-color: #1E2122;
+}

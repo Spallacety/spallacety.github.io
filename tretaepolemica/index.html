@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Treta & Polêmica</title>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Treta & Polêmica</h1>
+
+            <div class="player-names">
+                <input type="text" id="playerName" placeholder="Nome do jogador">
+                <button onclick="addPlayer()">Adicionar jogador</button>
+            </div>
+
+            <div class="points-target">
+                <label for="pointsTarget">Terminar com
+                    <input type="number" id="pointsTarget" min="1" max="20" value="3">
+                pontos.</label>
+            </div>
+
+            <button id="startGameButton" class="start-game-button green-button" onclick="startGame()">Iniciar jogo</button>
+
+            <div class="game-section">
+                <div class="current-player" id="currentPlayer"></div>
+                <div class="word-display" id="wordDisplay"></div>
+                <button id="showWordButton" onclick="showRandomWord()">Revelar palavra</button>
+                <div id="pointButtons"></div>
+                <button id="nextPlayerButton" style="display: none;" onclick="nextPlayer()">Próximo jogador</button>
+                <button id="refresh" style="display: none;" onclick="window.location.reload();">Jogar novamente</button>
+            </div>
+
+            <table class="podium-table" id="podiumTable">
+                <thead>
+                    <tr>
+                        <th>Jogador</th>
+                        <th>Pontos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <script src="js/init.js"></script>
+    </body>
+</html>
